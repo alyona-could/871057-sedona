@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Алена Кудряшова](https://up.htmlacademy.ru/htmlcss/23/user/871057).
-* Наставник: [Виктория Коваленко] (https://htmlacademy.ru/profile/id42638).
+* Наставник: [Виктория Коваленко](https://htmlacademy.ru/profile/id42638).
 
 ---
 
