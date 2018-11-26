@@ -7,7 +7,7 @@
 <body>
 	<header class="main-header">
 		<a class="logo-link">
-			<img class="logo" width="140" height="70" src="img/logo.svg"/ alt="Sedona">
+			<img class="logo" width="140" height="70" src="img/logo.svg" alt="Sedona">
 		</a>
 	<nav class="site-navigation">
 		<ul class="main-menu">
@@ -38,7 +38,39 @@
 			<p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
 		</div>
 	</section>
-	<!--Form and map-->
+	<section class="interest-form">
+		<div class="form-text">
+			<h2 class="form-text-title">Заинтересовались?</h2>
+			<p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+		</div>
+	</section>
+<section class="register-form">
+	<form class="register-form" action="https://echo.htmlacademy.ru" method="post">
+		<h2 class="form-title">Поиск гостиниц в Седоне</h2>
+			<p class="register-form">
+				<label for="arival">Дата заезда</label><br>
+				<input type="text" name="arival" id="arival" value="24 апреля 2017">
+				<button class="calendar"></button>
+			</p>
+			<p class="register-form">
+				<label for="depature">Дата выезда</label><br>
+				<input type="text" name="depature" id="depature" value="4 июля 2017">
+				<button class="calendar"></button>
+			</p>
+			<p class="register-form">			
+				<label for="adults">Взрослые:</label>
+                <button class="plus"></button>
+                <input class="people-number" id="adults" type="text" pattern="[1-9]*" value="2">
+                <button class="minus"></button>
+				<label for="children">Дети:</label>
+                <button class="plus"></button>
+                <input class="people-number" id="children" type="text" pattern="[0-9]*" value="0">
+                <button class="minus"></button>
+            </p> 
+		<button type="submit" class="index-button button">Найти</button>			
+	</form>
+</section>
+<!--MAP-->
 </main>
 	<footer class="main-footer">
 		<div class="hashtag">#visitsedona</div>
