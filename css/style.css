@@ -1,0 +1,140 @@
+body {
+  font-family: 'PT Sans', sans-serif;
+  background-color: #F2F2F2;
+}
+a {
+
+}
+/
+.button {
+ 
+}
+
+.button:hover,
+.button:focus,
+.button:active {
+
+}
+
+.main-header {
+	width: 1200px;
+	height: 56px
+	background-color: #FFFFFF;
+}
+.logo-link {
+	text-decoration: none;
+}
+.logo{
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+}
+.site-navigation {
+	height: 56px; /*надо или не надо?*/
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+.main-menu {
+}
+.menu-item  {
+	display: inline-block;
+	width: 24%;
+	text-align: center;
+	padding-bottom: 24px;
+	padding-top: 22px;
+	text-transform: uppercase;
+}
+
+.menu-item {
+}
+.container {
+	width: 1200px;
+	background-color: #FFFFFF;
+	
+}
+.main-banner {
+	display: block;
+	width: 100%;
+	height: 510px;
+	border: none;
+	background: url(../img/polygon.png) no-repeat bottom,
+				url(../img/background-photo.png) no-repeat top; 
+}
+
+.index-banner  {
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	padding-top: 76px;
+}
+.main-info  {
+	
+}
+.info-text  {
+	
+}
+.info-title  {
+text-transform: uppercase;	
+}
+.interest-form  {
+	
+}
+.form-text  {
+	
+}
+.form-text-title  {
+text-transform: uppercase;	
+}
+.register-form  {
+	
+}
+
+.main-footer  {
+	width: 1200px;
+	background-color: #FFFFFF;
+	text-align: center;
+}
+
+.hashtag  {
+	float: left;
+	
+}
+.social  {
+	display: inline-block;
+	width: auto;
+}
+.social-icons  {
+	display: inline-block;
+	margin-right: 6px;
+}
+.social-button{
+	display: block;
+	background-color: #80B3D2;
+	width: 46px;
+	height: 46px;
+}
+.social-button:hover,
+.social-button:focus {
+	display: block;
+	background-color: #669EBF;
+	width: 46px;
+	height: 46px;	
+}
+.social-button:active  {
+	display: block;
+	background-color: #5596BE;
+	width: 46px;
+	height: 46px;		
+}
+.visually-hidden{
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  …	
+}
+.developer  {
+display: inline-block;
+float: right;	
+}
