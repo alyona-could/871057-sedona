@@ -1,22 +1,18 @@
 body {
-  font-family: 'PT Sans', sans-serif;
-  background-color: #F2F2F2;
-  font-size: 14px;
-  text-transform: uppercase;
+	margin: 0;
+	padding: 0;
+	font-family: 'PT Sans', sans-serif;
+	background-color: #F2F2F2;
+	text-transform: uppercase;
+}
+
+p  {
+	font-size: 14px;
 }
 a {
-
-}
-/
-.button {
- 
+	text-decoration: none;
 }
 
-.button:hover,
-.button:focus,
-.button:active {
-
-}
 
 .main-header {
 	width: 1200px;
@@ -25,10 +21,9 @@ a {
 }
 .site-navigation {
 	width: 1200px;
-	height: 56px;
 	display: block;
-	position: fixed;
-	top: 10px;
+	position: absolute;
+	top: 0px;
 }
 .main-menu {
 
@@ -37,23 +32,22 @@ a {
 	display: inline-block;
 	width: 24%;
 	text-align: center;
-	padding-bottom: 24px;
-	padding-top: 22px;
 	text-transform: uppercase;
 	font-weight: bold;
 	font-size: 14px;
+	margin-top: auto;
+	margin-bottom: auto;
 }
+
 .menu-item  a{
 	text-decoration: none;
 	color: #000000;
 }
 .menu-item  a:hover,
 .menu-item  a:focus{
-	text-decoration: none;
 	color: #81b3d2;
 }
 .menu-item  a:active{
-	text-decoration: none;
 	color: #cacaca;
 }
 
@@ -85,9 +79,9 @@ a {
 	padding-top: 76px;
 }
 .main-info  {
-text-align: center;
+	text-align: center;
 }	
-}
+
 .info-text  {
 }
 .info-title  {
@@ -100,43 +94,57 @@ text-align: center;
 	
 }
 .form-text  {
-text-align: center;
-padding-bottom: 140px;	
+	text-align: center;
+	padding-bottom: 140px;	
 }
 .form-text-title  {
 	font-size: 30px;
 	font-weight: bold;
 	padding-top: 60px;
-	padding-bottom: 40px;
-	
+	padding-bottom: 40px;	
 }
 
 
 .register-form  {	
 	width: 568px;
-	height: 481px;
+	height: auto;
 	margin-top: -86px;
 	margin-right: auto;
 	margin-left: auto;
 	background-color: #FFFFFF;	
 }
 .form-title  {
+	display: block;
 	width: 568px;
 	color: #FFFFFF;
 	background-color: #766357;
+	font-size: 21px;
 	text-align: center;
 	padding-top: 36px;
 	padding-bottom: 36px;
-	
+	margin-bottom: 54px;
 }
+
+.form-title:hover,
+.form-title:focus {
+	background-color: #604E44;
+}
+.form-title:active {
+	background-color: #503E32;
+	color: #918A84;
+}
+
 .register-form-field {
+	width: 458px;
 	font-size: 14px;
 	font-weight: bold;	
 	text-align: left;
-	margin-left: 54px;
+	margin-right: auto;
+	margin-left: auto;
+	padding-bottom: 40px;
 }
 .date{
-	width: 332px;
+	width: 330px;
 	height: 38px;
 	background-color: #f2f2f2;
 	border: none;
@@ -145,9 +153,15 @@ padding-bottom: 140px;
 	font-weight: bold;
 	text-transform: uppercase;
 	padding-left: 14px;
-	margin-left: 22px;
 	}
-
+.date:hover{
+	background-color: #EBEBEB;
+}
+.date:focus {
+	background-color: #FFFFFF;
+	border: 2px solid #E5E5E5;
+}
+	
 .calendar{
 	margin-left: -30px;
 }
@@ -159,19 +173,38 @@ padding-bottom: 140px;
 	font-weight: bold;
 	text-transform: uppercase;
 	background-color: #f2f2f2;
-	border: none;
-	
+	border: none;	
 }	
-.plus{
-
+.plus  {
 	border: none;
-
 }
-.minus{
-
+.minus  {
     border: none;
-
+}
+.index-button  {
+	display: block;
+	color: #FFFFFF;
+	background-color: #80B3D2;
+	border: none;
+	width: 458px;
+	height: 59px;
+	font-size: 21px;
+	text-transform: uppercase;
+	font-weight: bold;
+	text-align: center;
+	vertical-align: middle;
+	margin-right: auto;
+	margin-left: auto;
 }	
+
+.index-button:hover,
+.index-button:focus {
+	background-color: #669EBF;
+}
+.index-button:active  {
+	background-color: #5596BE;
+	color: #94B9D3;
+}
 .main-footer  {
 	clear: both;
 	width: 1200px;
@@ -181,6 +214,8 @@ padding-bottom: 140px;
 
 .hashtag  {
 	float: left;
+	font-size: 16px;
+	font-weight: bold;
 	
 }
 .social  {
@@ -199,34 +234,131 @@ padding-bottom: 140px;
 }
 .social-button:hover,
 .social-button:focus {
-	display: block;
 	background-color: #669EBF;
-	width: 46px;
-	height: 46px;	
+	
 }
 .social-button:active  {
-	display: block;
 	background-color: #5596BE;
-	width: 46px;
-	height: 46px;		
-}
-.social-button:nth-child(1){
-	display: block;
-	background: url(../img/t.svg) #80B3D2 no-repeat;
-	width: 46px;
-	height: 46px;
-	z-index: -1;
+		
 }
 
+
 .visually-hidden{
-  position: absolute;
-  clip: rect(0 0 0 0);
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  …	
+	position: absolute;
+	clip: rect(0 0 0 0);
+	width: 1px;
+	height: 1px;
+	margin: -1px;
 }
+
+
 .developer  {
-display: inline-block;
-float: right;	
+	display: inline-block;
+	float: right;
+	font-size: 11px;	
+}
+.academy-logo {
+	text-decoration: none;
+	color: #000000;	
+}
+
+.academy-logo  a:hover,
+.academy-logo  a:focus{
+	text-decoration: none;
+	color: #81b3d2;
+}
+.academy-logo a:active{
+	text-decoration: none;
+	color: #cacaca;
+}
+/* Styles for inner.html*/
+
+.hotels  {
+	background-color: #FFFFFF;	
+}
+.hotels-list  {
+}
+
+.hotel-item  {
+	display: block;
+	list-style-type: none;
+	width: auto;
+	height: 150px;
+	border-bottom: 	1px solid #E5E5E5;
+	padding-left: 72px;
+	padding-right: 72px;
+}
+
+.hotel-img  {
+	float: left;
+	padding-right: 30px;
+}
+
+.hotel-name {
+	text-decoration: none;
+	color: #000000;	
+	font-size: 21px;
+	font-weight: bold;
+}
+
+.hotel-name:hover,
+.hotel-name:focus{
+	color: #81b3d2;
+}
+.academy-logo a:active{
+	color: #cacaca;
+}
+	
+.hotel-type {
+	
+}
+
+.hotel-buttons {
+	height: 27px;	
+}
+
+.button-info {
+	display: inline-block;
+	width: 110px;
+	height: 27px;
+	color: #FFFFFF;
+	background-color: #80B3D2;
+	border: none;
+	font-weight: bold;
+	text-align: center;
+}
+.button-info:hover,
+.button-info:focus{
+	background-color: #669EBF;
+}
+.button-info a:active{
+	background-color: #5596BE;
+	color: #94B9D3;
+}
+.button-booking	{
+	display: inline-block;
+	width: 142px;
+	height: 27px;
+	color: #FFFFFF;
+	background-color: #766357;
+	border: none;
+	font-weight: bold;
+	text-align: center;
+	margin-left: 6px;
+}
+
+.button-booking:hover,
+.button-booking:focus {
+	background-color: #604E44;
+}
+.button-booking:active {
+	background-color: #503E32;
+	color: #918A84;
+}
+.rating {
+	width: 110px;
+	height: 27px;
+	float: right;
+	background-color: #F2F2F2;
+	text-align: center;
 }
