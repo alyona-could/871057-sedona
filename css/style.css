@@ -6,12 +6,15 @@ body {
 	text-transform: uppercase;
 }
 
+<<<<<<< HEAD
+=======
 p  {
 	font-size: 14px;
 }
 a {
 	text-decoration: none;
 }
+>>>>>>> 1c3ee4b67f9f9b0317240bd02dcd4817dca3d36e
 
 
 .main-header {
@@ -22,12 +25,14 @@ a {
 .site-navigation {
 	width: 1200px;
 	display: block;
+<<<<<<< HEAD
+	top: 10px;
+=======
 	position: absolute;
 	top: 0px;
+>>>>>>> 1c3ee4b67f9f9b0317240bd02dcd4817dca3d36e
 }
-.main-menu {
 
-}
 .menu-item  {
 	display: inline-block;
 	width: 24%;
@@ -68,8 +73,7 @@ a {
 	width: 100%;
 	height: 510px;
 	border: none;
-	background: url(../img/polygon.png) no-repeat bottom,
-				url(../img/background-photo.png) no-repeat top; 
+	background: url(../img/background-photo.png) no-repeat top; 
 }
 
 .index-banner  {
@@ -90,9 +94,7 @@ a {
 	padding-top: 60px;
 	padding-bottom: 40px;;
 }
-.interest-form  {
-	
-}
+
 .form-text  {
 	text-align: center;
 	padding-bottom: 140px;	
