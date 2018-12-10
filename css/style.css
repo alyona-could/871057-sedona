@@ -23,11 +23,13 @@ a {
 }
 
 .main-header {
+	position: relative;
 	background-color: #FFFFFF;
 	height: 57px;
 }
 .site-navigation {
 }
+
 .main-menu	{
 	margin: 0;
 	padding: 0;
@@ -36,6 +38,7 @@ a {
 	flex-wrap: nowrap;
 	justify-content: space-between;
 	align-items: center;
+	height: 57px;
 	padding-left: 72px;
 	padding-right: 72px;
 }
@@ -47,7 +50,6 @@ a {
 	text-transform: uppercase;
 	font-weight: bold;
 	font-size: 14px;
-	border: 1px black solid;
 	width: 24%;
 }
 
@@ -55,15 +57,24 @@ a {
 	text-align: right;	
 }
 
+.menu-item  > .current-navigation,
+.menu-item  > .current-navigation:hover,
+.menu-item  > .current-navigation:focus,
+.menu-item  > .current-navigation:active{
+	text-decoration: none;
+	color: #756357;
+}
+
 .menu-item  a{
 	text-decoration: none;
 	color: #000000;
 }
+
 .menu-item  a:hover,
-.menu-item  a:focus{
+.menu-item  a:focus {
 	color: #81b3d2;
 }
-.menu-item  a:active{
+.menu-item  a:active {
 	color: #cacaca;
 }
 
@@ -71,7 +82,7 @@ a {
 	text-decoration: none;
 }
 .logo{
-	position: relative;
+	position: absolute;
 	top: 0px;
 	left: 50%;
 	transform: translateX(-50%);
@@ -379,21 +390,33 @@ a {
 
 .developer  {
 	min-width: 400px;
-	float: right;
 	font-size: 14px;
-	line-height: 100%;
+}
+.developer-text {
+	height: 43px;
+}
+.developer-text span{
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+	vertical-align: top;
+	margin-right: 6px;
+	padding-top: 15px;
 }
 .academy-logo {
+	display: inline-block;
 	text-decoration: none;
 	color: #000000;	
 }
 
-.academy-logo  svg:hover,
-.academy-logo  svg:focus{
+.academy-logo:hover,
+.academy-logo:focus{
 	fill: #81b3d2;
+	color: #81b3d2;
 }
-.academy-logo svg:active{
+.academy-logo:active{
 	fill: #cacaca;
+	color: #cacaca;
 }
 /* Styles for inner.html*/
 
@@ -531,8 +554,12 @@ a {
 	line-height: 17px;
 	margin-bottom: 46px;
 }
-
+.stars ul{
+	margin: 0;
+	padding: 0;
+}
 .one-star-icon{
+	list-style: none;
 	display: inline-block;
 	width: 17px;
 	height: 17px;
