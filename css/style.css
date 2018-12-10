@@ -27,26 +27,35 @@ a {
 	height: 57px;
 }
 .site-navigation {
-	position: relative;
-	top: 0px;
-	left: 0px;
-	height: 57px;
-	z-index: 1;
 }
 .main-menu	{
+	position: relative;
+	top: 10;
+	left: 10;
 	margin: 0;
+	padding: 0;
 	display: flex;	
 	flex-direction: row;
 	flex-wrap: nowrap;
-	justify-content: space-around;
+	justify-content: space-between;
 	align-items: center;
+	padding-left: 72px;
+	padding-right: 72px;
 }
 .menu-item  {
+	margin: 0;
+	padding: 0;
 	list-style-type: none;
-	text-align: center;
+	text-align: left;
 	text-transform: uppercase;
 	font-weight: bold;
 	font-size: 14px;
+	border: 1px black solid;
+	width: 24%;
+}
+
+.right-side {
+	text-align: right;	
 }
 
 .menu-item  a{
@@ -155,13 +164,19 @@ a {
 .register-form-field {
 	font-size: 14px;
 	font-weight: bold;	
-	text-align: left;
+	text-align: justify;
 	margin-right: auto;
 	margin-left: auto;
 	padding-bottom: 40px;
+	min-width: 458px;
 }
+
+
 .date{
-	width: 330px;
+	margin: 0;
+	padding: 0;
+	border: none;
+	width: 292px;
 	height: 38px;
 	background-color: #f2f2f2;
 	border: none;
@@ -180,10 +195,15 @@ a {
 }
 	
 .calendar{
-	margin-left: -30px;
+	margin: 0;
+	padding: 0;
+	border: none;
+	width: 38px;
+	height: 38px;
 	background: url(../img/calendar.svg) no-repeat center;
-	width: 21px;
-	height: 22px;
+	background-color: #f2f2f2;
+	vertical-align: bottom;	
+	margin-left: -4px;
 }
 .calendar svg{
 	fill: #a9a9a9;
@@ -195,17 +215,14 @@ a {
 .calendar svg:active{
 	fill: #81b3d2;
 }
-.guests{
-	display: inline-block;
-	font-size: 14px;
-	font-weight: bold;	
-	text-align: left;
-	padding-bottom: 40px;
+.guests:last-child{
+	text-align: right;
 }
 
 .people-number {
 	margin: 0;
 	padding: 0;
+	border: none;
 	width: 38px;
 	height: 38px;
 	text-align: center;
@@ -321,25 +338,25 @@ a {
 	margin-right: 6px;
 }
 
-.social-icons:last-child{
+.social-icons:last-child {
 	margin-right: 0;
 }
-.social-button{
+.social-button {
 	display: block;
 	width: 46px;
 	height: 46px;
 }
-.social-button:nth-child(1)	{
+.twitter {
 	background: url(../img/twitter.svg) no-repeat center;
 	background-color: #80B3D2;
     
 }
-.social-button:nth-child(2)	{
-	background: url(../img/facebook.svg) no-repeat center;
+.facebook {
+	background: url(../img/fb-icon.svg) no-repeat center;
 	background-color: #80B3D2;
     
 }
-.social-button:nth-child(3)	{
+.youtube {
 	background: url(../img/youtube.svg) no-repeat center;
 	background-color: #80B3D2;
     
