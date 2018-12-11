@@ -9,6 +9,7 @@ body {
 
 p  {
 	font-size: 14px;
+	line-height: 24px;
 }
 a {
 	text-decoration: none;
@@ -38,8 +39,8 @@ a {
 	justify-content: space-between;
 	align-items: center;
 	height: 57px;
-	padding-left: 72px;
-	padding-right: 72px;
+	padding-left: 71px;
+	padding-right: 71px;
 }
 .menu-item  {
 	margin: 0;
@@ -49,11 +50,16 @@ a {
 	text-transform: uppercase;
 	font-weight: bold;
 	font-size: 14px;
-	width: 24%;
+	width: 22.7272727273%;
+border: 1px black solid;
 }
 
 .right-side {
-	text-align: right;	
+	text-align: right;
+}
+.right-side:last-child{
+	text-align: right;
+
 }
 
 .menu-item  > .current-navigation,
@@ -102,41 +108,50 @@ a {
 	text-align: center;
 }	
 
-.info-text  {
+.info-text p{
+	margin: 0;
 }
 .info-title  {
 	margin: 0;
 	font-size: 21px;
 	font-weight: bold;
-	padding-top: 60px;
-	padding-bottom: 40px;
+	line-height: 26px;
+	margin-top: 60px;
+	margin-bottom: 32px;
 	margin-right: auto;
 	margin-left: auto;
 	max-width: 440px;
 }
 
-.form-text  {
+.form-text {
 	text-align: center;
-	padding-bottom: 140px;	
+}
+.form-text p{
+	margin: 0;
+	margin-bottom: 47px;
 }
 .form-text-title  {
+	margin: 0;
 	font-size: 30px;
+	line-height: 36px;
 	font-weight: bold;
-	padding-top: 60px;
-	padding-bottom: 40px;	
+	margin-top: 60px;
+	margin-bottom: 25px;	
 }
 
 
-.register-form  {	
+.register-form  {
+	margin: 0;	
 	max-width: 458px;
 	height: auto;
-	margin-top: -86px;
 	margin-right: auto;
 	margin-left: auto;
+	margin-bottom: 75px;
 	background-color: #FFFFFF;
 	padding: 55px;	
 }
 .form-title  {
+	margin: 0;
 	display: block;
 	min-width: 568px;
 	color: #FFFFFF;
@@ -144,12 +159,11 @@ a {
 	background-color: #766357;
 	font-size: 21px;
 	font-weight: bold;
-	line-height: 17px;
+	line-height: 26px;
 	text-align: center;
 	text-transform: uppercase;
-	padding-top: 36px;
-	padding-bottom: 36px;
-	margin-bottom: 100px;
+	padding-top: 30px;
+	padding-bottom: 30px;
 	margin-right: auto;
 	margin-left: auto;
 }
@@ -164,17 +178,26 @@ a {
 }
 
 .register-form-field {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	align-items: center;
+	flex-wrap: nowrap;
+	margin: 0;
 	font-weight: bold;	
-	padding-bottom: 40px;
+	padding-bottom: 30px;
 }
 
-
+.register-form-field label{
+	margin-right: auto;
+}
 .date{
 	margin: 0;
 	padding: 0;
 	border: none;
-	width: 292px;
-	height: 38px;
+	box-sizing: border-box;
+	min-width: 315px;
+	min-height: 38px;
 	background-color: #f2f2f2;
 	border: none;
 	text-align: left;
@@ -212,19 +235,25 @@ a {
 .calendar svg:active{
 	fill: #81b3d2;
 }
-.guests:last-child{
-	text-align: right;
-}
 
+.kids{
+	margin: 0;
+	padding-left: 53px;
+	padding-right: 27px;
+
+}
+.adults{
+	margin: 0;
+	padding-right: 40px;
+}
 .people-number {
 	margin: 0;
 	padding: 0;
 	border: none;
-	width: 38px;
+	max-width: 46px;
 	height: 38px;
 	text-align: center;
 	font-size: 14px;
-	line-height: 10px;
 	font-weight: bold;
 	text-transform: uppercase;
 	background-color: #f2f2f2;
@@ -240,7 +269,6 @@ a {
 	background-color: #f2f2f2;
 	color: #a9a9a9;
 	font-size: 21px;
-	line-height: 11px;
 	font-weight: bold;
 	vertical-align: bottom;
 	margin-left: -4px;
@@ -254,7 +282,6 @@ a {
 	background-color: #f2f2f2;
 	color: #a9a9a9;
 	font-size: 21px;
-	line-height: 11px;
 	font-weight: bold;
 	vertical-align: bottom;
 	margin-right: -4px;
@@ -287,14 +314,16 @@ a {
 	background-color: #80B3D2;
 	border: none;
 	width: 458px;
-	height: 59px;
+	height: 58px;
 	font-size: 21px;
 	text-transform: uppercase;
 	font-weight: bold;
 	text-align: center;
 	vertical-align: middle;
+	padding: 0;
 	margin-right: auto;
 	margin-left: auto;
+	margin-top: 24px;
 }	
 
 .index-button:hover,
@@ -314,8 +343,9 @@ a {
 	justify-content: space-between;
 	align-items: center;
 	align-content: center;
-	padding-top: 50px;
-	padding-bottom: 50px;
+	padding-top: 36px;
+	padding-bottom: 36px;
+	border: 1px black solid;
 }
 
 .hashtag  {
@@ -324,12 +354,19 @@ a {
 	font-weight: bold;
 }
 .social  ul{
-	min-width: 400px;
 	margin: 0;
 	padding: 0;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
 }
 .social-icons  {
-	display: inline-block;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
 	margin-right: 6px;
 }
 
@@ -339,7 +376,7 @@ a {
 .social-button {
 	display: block;
 	width: 46px;
-	height: 46px;
+	height: 48px;
 }
 .twitter {
 	background: url(../img/twitter.svg) no-repeat center;
@@ -420,10 +457,11 @@ a {
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-start;
+	flex-wrap: nowrap;
 	list-style-type: none;
 	border-bottom: 	1px solid #E5E5E5;
 	padding-top: 30px;
-	padding-bottom: 30px;
+	padding-bottom: 26px;
 	padding-left: 72px;
 	padding-right: 72px;
 }
@@ -435,14 +473,14 @@ a {
 .hotel-item  h2{
 	margin: 0;
 	padding: 0;
+	font-size: 21px;
+	font-weight: bold;
 	line-height: 17px;
-	margin-bottom: 18px;
+	margin-bottom: 15px;
 }
 .hotel-name {
 	text-decoration: none;
 	color: #000000;	
-	font-size: 21px;
-	font-weight: bold;
 }
 
 .hotel-name:hover,
@@ -459,9 +497,8 @@ a {
 .hotel-info{
 	margin: 0;
 	padding: 0;
-	margin-bottom: 18px;
+	margin-bottom: 15px;
 	font-size: 14px;
-	line-height: 10px;
 }	
 .hotel-type {
 	display: inline-block;
@@ -471,7 +508,6 @@ a {
 
 .hotel-price{
 	display: inline-block;
-	min-width: 110px;
 	padding: 0;
 	margin-left: 6px;
 	
@@ -503,6 +539,8 @@ a {
 	color: #94B9D3;
 }
 .button-booking	{
+	margin: 0;
+	padding: 0;
 	display: inline-block;
 	background-color: #766357;
 	border: none;
@@ -510,7 +548,6 @@ a {
 	padding-bottom: 8px;
 	padding-right: 17px;
 	padding-left: 17px;
-	margin-left: 6px;
 	text-align: center;
     color: #FFFFFF;
 }
