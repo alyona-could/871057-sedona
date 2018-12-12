@@ -27,8 +27,6 @@ a {
 	position: relative;
 	background-color: #FFFFFF;
 }
-.site-navigation {
-}
 
 .main-menu	{
 	margin: 0;
@@ -95,9 +93,14 @@ a {
 	display: block;
 	height: 510px;
 	border: none;
-	background: url(../img/background-photo.png) no-repeat top; 
+	background: url(../img/background-photo.jpg) no-repeat top; 
 }
-
+.main-banner:after{
+	content:url(../img/polygon.png);
+	position: relative;
+	top: 22px;
+	left: 0;
+}
 .index-banner  {
 	display: block;
 	margin-right: auto;
@@ -178,6 +181,7 @@ a {
 }
 
 .register-form-field {
+	position: relative;
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-end;
@@ -191,12 +195,15 @@ a {
 .register-form-field label{
 	margin-right: auto;
 }
+.register-form-field input{
+
+}
 .date{
 	margin: 0;
 	padding: 0;
 	border: none;
 	box-sizing: border-box;
-	min-width: 315px;
+	min-width: 346px;
 	min-height: 38px;
 	background-color: #f2f2f2;
 	border: none;
@@ -215,15 +222,16 @@ a {
 }
 	
 .calendar{
+	position: absolute;
+	top: 0;
+	right: 0;
 	margin: 0;
 	padding: 0;
 	border: none;
 	width: 38px;
 	height: 38px;
-	background: url(../img/calendar.svg) no-repeat center;
-	background-color: #f2f2f2;
+	background-color: transparent;
 	vertical-align: bottom;	
-	margin-left: -4px;
 }
 .calendar svg{
 	fill: #a9a9a9;
@@ -238,19 +246,19 @@ a {
 
 .kids{
 	margin: 0;
-	padding-left: 53px;
+	padding-left: 54px;
 	padding-right: 27px;
 
 }
 .adults{
 	margin: 0;
-	padding-right: 40px;
+	padding-right: 30px;
 }
 .people-number {
 	margin: 0;
 	padding: 0;
 	border: none;
-	max-width: 46px;
+	max-width: 38px;
 	height: 38px;
 	text-align: center;
 	font-size: 14px;
@@ -271,7 +279,7 @@ a {
 	font-size: 21px;
 	font-weight: bold;
 	vertical-align: bottom;
-	margin-left: -4px;
+	margin-left: 0px;
 }
 .minus  {
 	margin: 0;
@@ -284,7 +292,7 @@ a {
 	font-size: 21px;
 	font-weight: bold;
 	vertical-align: bottom;
-	margin-right: -4px;
+	margin-right: 0px;
 }
 
 .plus:hover,
@@ -491,9 +499,7 @@ a {
 .academy-logo a:active{
 	color: #cacaca;
 }
-.hotel-text {
-	
-}
+
 .hotel-info{
 	display: flex;
 	flex-direction: row;
@@ -517,10 +523,6 @@ a {
 }
 
 .hotel-buttons {
-	flex-direction: row;
-	justify-content: flex-start;
-	flex-wrap: nowrap;
-	align-items: center;
 	font-size: 14px;
 	font-weight: bold;
 }
