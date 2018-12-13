@@ -87,19 +87,24 @@ a {
 	top: 0px;
 	left: 50%;
 	transform: translateX(-50%);
+	z-index: 1;
 }
 
 .main-banner {
+	position: relative;
 	display: block;
 	height: 510px;
 	border: none;
 	background: url(../img/background-photo.jpg) no-repeat top; 
 }
 .main-banner:after{
-	content:url(../img/polygon.png);
-	position: relative;
-	top: 22px;
-	left: 0;
+	content: "" ;
+    position: absolute;
+    bottom: 0;
+    background: url(../img/polygon.png) 0 0 no-repeat;
+    left: 0;
+    height: 59px;
+    width: 100%;
 }
 .index-banner  {
 	display: block;
@@ -169,6 +174,7 @@ a {
 	padding-bottom: 30px;
 	margin-right: auto;
 	margin-left: auto;
+	cursor: pointer;
 }
 
 .form-title:hover,
@@ -276,6 +282,7 @@ a {
 	font-weight: bold;
 	vertical-align: bottom;
 	margin-left: 0px;
+	cursor: pointer;
 }
 .minus  {
 	margin: 0;
@@ -289,6 +296,7 @@ a {
 	font-weight: bold;
 	vertical-align: bottom;
 	margin-right: 0px;
+	cursor: pointer;
 }
 
 .plus:hover,
@@ -328,6 +336,7 @@ a {
 	margin-right: auto;
 	margin-left: auto;
 	margin-top: 24px;
+	cursor: pointer;
 }	
 
 .index-button:hover,
