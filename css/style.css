@@ -195,9 +195,7 @@ a {
 .register-form-field label{
 	margin-right: auto;
 }
-.register-form-field input{
 
-}
 .date{
 	margin: 0;
 	padding: 0;
@@ -222,16 +220,14 @@ a {
 }
 	
 .calendar{
-	position: absolute;
-	top: 0;
-	right: 0;
+	position: absolute;	
 	margin: 0;
 	padding: 0;
 	border: none;
 	width: 38px;
 	height: 38px;
 	background-color: transparent;
-	vertical-align: bottom;	
+	cursor: pointer;
 }
 .calendar svg{
 	fill: #a9a9a9;
@@ -416,8 +412,8 @@ a {
 	width: 1px;
 	height: 1px;
 	margin: -1px;
+	outline: none;
 }
-
 
 .developer  {
 	min-width: 400px;
