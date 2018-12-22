@@ -95,6 +95,8 @@ a {
 }
 
 .logo-link {
+	width: 140px;
+	height: 71px;
 	text-decoration: none;
 	position: absolute;
 	top: 0px;
@@ -383,6 +385,7 @@ a {
 
 .register-form-field label{
 	margin-right: auto;
+	width: 112px;
 	
 }
 .register-form-field input{
@@ -827,7 +830,7 @@ a {
 	
 }
 
-.stars ul{
+.stars{
 	margin: 0;
 	padding: 0;
 	line-height: 17px;
