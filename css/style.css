@@ -282,18 +282,7 @@ a {
 .gift{
 	background: url(../img/gift.svg) no-repeat center 60px;
 }
-.interest-form{
-	position: relative;
-	-webkit-box-sizing: border-box;
-	        box-sizing: border-box;
-	height: 290px;
-}
-.form-text {
-	text-align: center;
-}
-.form-text p{
-	margin: 0;
-}
+
 .form-text-title  {
 	margin: 0;
 	font-size: 30px;
@@ -315,26 +304,36 @@ a {
     height: 589px;
     border: 0;
 }
-.registration {
-	position: absolute;
-	top: 204px;
-	left:50%; 
-	margin-left: -284px;
-	margin-bottom: 77px;
-	z-index: 2;
+
+.wrapper {
+  width: 1200px;
+  margin: auto;
 }
+
+.form-search {
+  position: relative;
+  text-align: center;
+  z-index: 2;	
+}
+
+.form-text-title  {
+	margin: 0;
+	font-size: 30px;
+	line-height: 36px;
+	font-weight: bold;
+	padding-top: 50px;
+	margin-bottom: 25px;	
+}
+
 .register-form  {
-	margin: 0;	
+	position: absolute;
+	left: 50%;
+	transform: translatex(-50%);
 	max-width: 458px;
-	height: auto;
-	margin-right: auto;
-	margin-left: auto;
 	background-color: #FFFFFF;
-	padding: 55px;	
+	padding: 55px;	*/
 }
 .form-title  {
-	margin: 0;
-	display: block;
 	min-width: 568px;
 	color: #FFFFFF;
 	border: none;
@@ -342,12 +341,12 @@ a {
 	font-size: 21px;
 	font-weight: bold;
 	line-height: 26px;
-	text-align: center;
 	text-transform: uppercase;
 	padding-top: 30px;
 	padding-bottom: 30px;
 	margin-right: auto;
 	margin-left: auto;
+	margin-top: 50px;
 }
 
 .form-title:hover,
@@ -384,13 +383,11 @@ a {
 }
 
 .register-form-field label{
-	margin-right: auto;
+	text-align: left;
 	width: 112px;
 	
 }
-.register-form-field input{
 
-}
 .date{
 	margin: 0;
 	padding: 0;
@@ -444,7 +441,6 @@ a {
 }
 
 .adults{
-	margin: 0;
 	padding-right: 37px;
 }
 
@@ -511,19 +507,15 @@ a {
 
 
 .index-button  {
-	display: block;
 	color: #FFFFFF;
 	background-color: #80B3D2;
 	border: none;
 	width: 458px;
 	height: 58px;
 	font-size: 21px;
+	line-height: 26px;
 	text-transform: uppercase;
 	font-weight: bold;
-	text-align: center;
-	padding: 0;
-	margin-right: auto;
-	margin-left: auto;
 	margin-top: 24px;
 }	
 
