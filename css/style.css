@@ -543,11 +543,13 @@ a  {
 	width: 38px;
 	height: 38px;
 	background-color: #f2f2f2;
-	color: #a9a9a9;
-	font-size: 21px;
-	font-weight: bold;
 	vertical-align: bottom;
 	margin-left: 0px;
+}
+
+
+.plus  svg  {
+	fill: #a9a9a9;
 }
 
 
@@ -558,33 +560,35 @@ a  {
 	width: 38px;
 	height: 38px;
 	background-color: #f2f2f2;
-	color: #a9a9a9;
-	font-size: 21px;
-	font-weight: bold;
 	vertical-align: bottom;
 	margin-right: 0px;
 }
 
 
-.plus:hover,
-.plus:focus  {
-	color: #000000;
+.minus svg  {
+	fill: #a9a9a9;
 }
 
 
-.plus:active  {
-	color: #81b3d2;
+.plus:hover svg,
+.plus:focus  svg  {
+	fill: #000000;
 }
 
 
-.minus:hover,
-.minus:focus  {
-	color: #000000;
+.plus:active  svg  {
+	fill: #81b3d2;
 }
 
 
-.minus:active  {
-	color: #81b3d2;
+.minus:hover svg,
+.minus:focus  svg  {
+	fill: #000000;
+}
+
+
+.minus:active  svg  {
+	fill: #81b3d2;
 }
 
 
@@ -1354,12 +1358,12 @@ legend  {
 }
 
 
-.up-down svg:active,
-.up-down svg:focus {
+.up-down svg:hover,
+.up-down svg:focus  {
 	fill: #80B3D2;
 }
 
 
-.up-down svg:active {
+.up-down svg:active  {
 	fill: #000000;
 }
