@@ -83,19 +83,19 @@
 						</fieldset>
 					</section>
 					<section class="price">
-					<div class="range">
-						<div class="filter-price-per-day">Стоимость в сутки (Р):</div>
-						<div class="price-per-day">
-							<label class="min-price">от <input type="text" name="min-price" value="0"></label>
-							<label class="max-price">до <input type="text" name="max-price" value="3000"></label>
-						</div>
-						<div class="range-controls">
-							<div class="scale">
-								<div class="bar"></div>
-								<div class="range-toggle range-toggle-min"></div>
-								<div class="range-toggle range-toggle-max"></div>
+						<div class="range">
+							<div class="filter-price-per-day">Стоимость в сутки (Р):</div>
+							<div class="price-per-day">
+								<label class="min-price">от <input type="text" name="min-price" value="0"></label>
+								<label class="max-price">до <input type="text" name="max-price" value="3000"></label>
 							</div>
-						</div>
+							<div class="range-controls">
+								<div class="scale">
+									<div class="bar"></div>
+									<div class="range-toggle range-toggle-min"></div>
+									<div class="range-toggle range-toggle-max"></div>
+								</div>
+							</div>
 						</div>
 						<button type="submit" class="filter-button">Показать</button>
 					</section>
@@ -106,14 +106,24 @@
 				<div class="sort-by">
 					<h3>Сортировка:</h3>
 					<ul>
-						<li class="sort-by-item"><a class="current" href="#">По цене</a></li>
-						<li class="sort-by-item"><a class="sort" href="#">По типу</a></li>
-						<li class="sort-by-item"><a class="sort" href="#">По рейтингу</a></li>
+						<li class="sort-by-item">
+							<a class="current" href="#">По цене</a>
+						</li>
+						<li class="sort-by-item">
+							<a class="sort" href="#">По типу</a>
+						</li>
+						<li class="sort-by-item">
+							<a class="sort" href="#">По рейтингу</a>
+						</li>
 					</ul>
 				</div>
 				<div class="sorting-buttons">
-					<button type="button" aria-label="Больше" class="up-down"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path d="M5.5 0L0 10h11z"/></svg></button>
-					<button type="button" aria-label="Меньше" class="up-down"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path d="M5.5 10L0 0h11"/></svg></button>
+					<button type="button" aria-label="По возрастанию" class="up-down">
+						<svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path d="M5.5 0L0 10h11z"/></svg>
+					</button>
+					<button type="button" aria-label="По убыванию" class="up-down">
+						<svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path d="M5.5 10L0 0h11"/></svg>
+					</button>
 				</div>
 			</section>
 			<section class="hotels">
