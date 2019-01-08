@@ -61,7 +61,7 @@ a  {
 }
 
 
-.menu-item   {
+.menu-item  {
 	margin: 0;
 	padding: 0;
 	list-style-type: none;
@@ -80,7 +80,7 @@ a  {
 
 
 .right-side:last-child  {
-	margin-left: 0;
+	margin-left: 5px;
 }
 
 
@@ -100,7 +100,7 @@ a  {
 
 
 .menu-item  a:hover,
-.menu-item  a:focus   {
+.menu-item  a:focus  {
 	color: #81b3d2;
 }
 
@@ -110,7 +110,7 @@ a  {
 }
 
 
-.logo-link   {
+.logo-link  {
 	width: 140px;
 	height: 71px;
 	text-decoration: none;
@@ -124,7 +124,7 @@ a  {
 }
 
 
-.main-banner   {
+.main-banner  {
 	position: relative;
 	display: block;
 	height: 510px;
@@ -154,7 +154,7 @@ a  {
 
 .main-info  {
 	text-align: center;
-	margin-bottom: 53px;
+	margin-bottom: 50px;
 }	
 
 
@@ -198,8 +198,8 @@ a  {
 .reason  {
 	margin: 0;
 	padding: 0;
-	padding-top: 45px;
-	padding-bottom: 60px;
+	padding-top: 48px;
+	padding-bottom: 58px;
 	max-width: 400px;
 	background: #eeeeee;
 }
@@ -236,7 +236,7 @@ a  {
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 	max-width: 400px;
-	padding-top: 45px;
+	padding-top: 50px;
 	padding-right: 60px;
 	padding-left: 60px;
 	min-height: 256px;
@@ -276,7 +276,9 @@ a  {
 	max-height: 256px;
 }
 
-
+.reason-heading  {
+	padding-bottom: 2px;
+}
 .reason-text   {
 	margin-right: 60px;
 	margin-left: 60px;
@@ -284,7 +286,12 @@ a  {
 	line-height: 20px;
 }
 
-
+.reason-text-grey   {
+	margin-right: 58px;
+	margin-left: 58px;
+	font-size: 14px;
+	line-height: 20px;
+}
 .extra-reasons   {
 	margin: 0;
 	padding: 0;
@@ -404,7 +411,7 @@ a  {
 	padding-bottom: 30px;
 	margin-right: auto;
 	margin-left: auto;
-	margin-top: 50px;
+	margin-top: 47px;
 }
 
 
