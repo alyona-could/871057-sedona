@@ -825,8 +825,8 @@ a  {
 	flex-wrap: nowrap;
 	list-style-type: none;
 	border-bottom: 	1px solid #E5E5E5;
-	padding-top: 30px;
-	padding-bottom: 26px;
+	padding-top: 28px;
+	padding-bottom: 27px;
 	padding-left: 72px;
 	padding-right: 72px;
 }
@@ -836,6 +836,7 @@ a  {
 	margin: 0;
 	padding: 0;
 	padding-right: 30px;
+	padding-top: 2px;
 }
 
 
@@ -1018,7 +1019,7 @@ a  {
 	-ms-flex-wrap: nowrap;
 	flex-wrap: nowrap;
 	padding-top: 27px;
-	padding-bottom: 27px;
+	padding-bottom: 3px;
 	padding-left: 72px;
 	padding-right: 72px;
 	background: url(../img/filter-background.jpg) no-repeat top;
@@ -1042,16 +1043,16 @@ legend  {
 }
 
 .infrostructure  ul{
-	margin-top: 20px;
+	margin-top: 23px;
 	padding: 0;
 }
 
 .type  {
-	margin-left: 116px;
+	margin-left: 119px;
 }
 
 .type ul{
-	margin-top: 20px;
+	margin-top: 23px;
 	padding: 0;
 }
 
@@ -1061,7 +1062,7 @@ legend  {
 	padding: 0;
 	list-style: none;
 	padding-left: 40px;
-	margin-bottom: 22px;
+	margin-bottom: 27px;
 }
 
 	
@@ -1097,6 +1098,7 @@ legend  {
 	outline-style: solid;
 	cursor: pointer;
 	line-height: 24px;
+	margin-top: 8px;
 }
 
 
@@ -1111,7 +1113,7 @@ legend  {
 
 
 .range {
-	width: 330px;
+	width: 318px;
 }
 
 
@@ -1125,7 +1127,7 @@ legend  {
 
 .price-per-day  {
 	position: relative;
-	height: 36px;
+	height: 34px;
 	margin-bottom: 20px;
 	
 	border: 2px solid #ffffff;
@@ -1146,20 +1148,16 @@ legend  {
 	transform: translate(-50%, -50%);
 }
 	
-	
-.price-per-day lable  {
-	display: inline-block;
-	font-size: 14px;
-	line-height: 38px;
-	vertical-align: top;
-	cursor: pointer;
-}
-
 
 .price-per-day .min-price,
 .price-per-day .max-price  {
 	width: 90px;
 	padding-left: 65px;
+	display: inline-block;
+	font-size: 14px;
+	line-height: 36px;
+	vertical-align: middle;
+	cursor: pointer;
 }
 
 
@@ -1256,10 +1254,11 @@ legend  {
 	justify-content: stretch;
 	-ms-flex-wrap: nowrap;
 	flex-wrap: nowrap;
-	padding-top: 40px;
-	padding-bottom: 40px;
+	padding-top: 30px;
+	padding-bottom: 30px;
 	padding-left: 72px;
-	padding-right: 72px;	
+	padding-right: 72px;
+	border-bottom: 1px solid #E5E5E5;	
 }
 
 
