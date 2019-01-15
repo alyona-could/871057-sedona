@@ -344,15 +344,6 @@ a  {
 }
 
 
-.form-text-title  {
-	margin: 0;
-	font-size: 30px;
-	line-height: 36px;
-	font-weight: bold;
-	padding-top: 50px;
-	margin-bottom: 25px;	
-}
-
 
 .map  {
 	position: relative;
@@ -370,15 +361,15 @@ a  {
 
 
 .wrapper  {
-  width: 1200px;
-  margin: auto;
+	width: 1200px;
+	margin: auto;
+	z-index: 2;  
 }
 
 
 .form-search  {
-  position: relative;
-  text-align: center;
-  z-index: 2;	
+	position: relative;
+	text-align: center;  
 }
 
 
@@ -390,17 +381,6 @@ a  {
 	padding-top: 50px;
 	margin-bottom: 25px;	
 }
-
-
-.register-form  {
-	position: absolute;
-	left: 50%;
-	transform: translatex(-50%);
-	max-width: 458px;
-	background-color: #FFFFFF;
-	padding: 55px;	*/
-}
-
 
 .form-title  {
 	min-width: 568px;
@@ -416,6 +396,7 @@ a  {
 	margin-right: auto;
 	margin-left: auto;
 	margin-top: 47px;
+	z-index: 3;
 }
 
 
@@ -429,6 +410,53 @@ a  {
 	background-color: #503E32;
 	color: #918A84;
 }
+
+.register-form  {
+	position: absolute;
+	left: 50%;
+	transform: translatex(-50%);
+	max-width: 458px;
+	background-color: #FFFFFF;
+	padding: 55px;	
+	z-index: 1;
+}
+
+
+.register-form-hidden  {
+	animation: form-hidden;
+	animation-duration: 0s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes form-hidden  {
+	0%{
+		transform: translate(-50%, 0%);
+		
+	}
+	100%{
+		transform: translate(-50%, -100%);
+		z-index: -1
+	}
+}
+
+.register-form-shown  {
+	animation: form-shown;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+}
+
+
+@keyframes form-shown  {
+	0%{
+		transform: translate(-50%, -100%);
+		opacity: 0;
+	}
+	100%{
+		transform: translate(-50%, 0%);
+		opacity: 1;
+	}
+}
+
 
 
 .register-form-field  {
