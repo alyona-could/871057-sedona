@@ -441,7 +441,7 @@ a  {
 
 .register-form-shown  {
 	animation: form-shown;
-	animation-duration: 1s;
+	animation-duration: 0.1s;
 	animation-fill-mode: forwards;
 }
 
@@ -450,10 +450,12 @@ a  {
 	0%{
 		transform: translate(-50%, -100%);
 		opacity: 0;
+		z-index: -1
 	}
 	100%{
 		transform: translate(-50%, 0%);
 		opacity: 1;
+		z-index: 1
 	}
 }
 
@@ -1249,8 +1251,8 @@ legend  {
 
 .filter-button  {
 	display: block;
-	margin: 0 auto;
-	padding: 6px 35px;
+	margin-left: 85px;
+	padding: 6px 34px;
 	font-size: 14px;
 	line-height: 20px;
 	color: #ffffff;
@@ -1294,7 +1296,7 @@ legend  {
 	font-size: 21px;
     font-weight: bold;
     line-height: 26px;
-	padding-right: 50px;
+	padding-right: 48px;
 }
 
 
@@ -1396,10 +1398,11 @@ legend  {
  
 .up-down  {
 	margin: 0;
-	padding: 0;
+	margin-left: 2px;
+	padding: 4px;
 	border: none;
-	width: 15px;
-	height: 15px;
+	width: 18px;
+	height: 18px;
 	background-color: transparent;
 	cursor: pointer;
 }
