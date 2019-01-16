@@ -10,7 +10,7 @@ body  {
 p  {
 	margin: 0;
 	font-size: 14px;
-	line-height: 24px;
+	line-height: 21px;
 }
 
 
@@ -154,7 +154,7 @@ a  {
 
 .main-info  {
 	text-align: center;
-	margin-bottom: 50px;
+	margin-bottom: 54px;
 }	
 
 
@@ -200,14 +200,22 @@ a  {
 	padding: 0;
 	padding-top: 48px;
 	padding-bottom: 58px;
+	padding-left: 73px;
+	padding-right: 72px;
+	box-sizing: border-box;
 	max-width: 400px;
 	background: #eeeeee;
 }
 
+
+.reason:nth-child(even)  {
+	padding-left: 63px;
+	padding-right: 65px;
+}
  
 .reason h2  {
 	margin: 0;
-	max-width: 40%;	
+	max-width: 50%;	
 	margin-right: auto;
 	margin-left: auto;
 }
@@ -236,13 +244,13 @@ a  {
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 	max-width: 400px;
-	padding-top: 50px;
+	padding-top: 48px;
 	padding-right: 60px;
 	padding-left: 60px;
 	min-height: 256px;
 	text-align: center;
 	font-size: 14px;
-	line-height: 14px;
+	line-height: 21px;
 }
 
 
@@ -265,8 +273,8 @@ a  {
 
 .number  {
 	display: block;
-	padding-top: 25px;
-	padding-bottom: 23px;
+	padding-top: 23px;
+	padding-bottom: 21px;
 }
 
 
@@ -277,24 +285,19 @@ a  {
 }
 
 
-.reason-heading  {
-	padding-bottom: 2px;
-}
-
-
 .reason-text   {
 	margin-right: 60px;
 	margin-left: 60px;
 	font-size: 14px;
-	line-height: 20px;
+	line-height: 21px;
+	padding-top: 4px;
 }
 
 .reason-text-grey   {
-	margin-right: 58px;
-	margin-left: 58px;
 	font-size: 14px;
-	line-height: 20px;
+	line-height: 21px;
 }
+
 
 .extra-reasons   {
 	margin: 0;
@@ -324,7 +327,9 @@ a  {
 
 
 .extra-reason-item  {
-	padding-top: 146px;
+	margin: 0;
+	padding: 0;
+	padding-top: 145px;
 	min-width: 33%;
 }
 
@@ -369,7 +374,13 @@ a  {
 
 .form-search  {
 	position: relative;
-	text-align: center;  
+	text-align: center; 	
+}
+
+
+.form-text  {
+	font-size: 14px;
+	line-height: 24px;
 }
 
 
@@ -379,8 +390,9 @@ a  {
 	line-height: 36px;
 	font-weight: bold;
 	padding-top: 50px;
-	margin-bottom: 25px;	
+	margin-bottom: 26px;	
 }
+
 
 .form-title  {
 	min-width: 568px;
@@ -395,7 +407,7 @@ a  {
 	padding-bottom: 30px;
 	margin-right: auto;
 	margin-left: auto;
-	margin-top: 47px;
+	margin-top: 46px;
 	z-index: 3;
 }
 
@@ -487,7 +499,7 @@ a  {
 .register-form-field label  {
 	text-align: left;
 	width: 112px;
-	
+	box-sizing: border-box;
 }
 
 
@@ -549,14 +561,15 @@ a  {
 }
 
 
-.kids  {
-	margin-left: 50px;
-	padding-right: 23px;;
+.register-form-field > .kids  {
+	box-sizing: border-box;
+	padding-left: 52px;
+	width: 118px;
 }
 
 
 .adults  {
-	padding-right: 37px;
+	padding-right: 41px;
 }
 
 
@@ -569,7 +582,7 @@ a  {
 	text-align: center;
 	font-size: 14px;
 	font-weight: bold;
-	text-transform: uppercase;
+	line-height: 26px;
 	background-color: #f2f2f2;
 	border: none;	
 }
@@ -601,6 +614,7 @@ a  {
 	background-color: #f2f2f2;
 	vertical-align: bottom;
 	margin-right: 0px;
+	margin-left: 0px;
 }
 
 
