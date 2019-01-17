@@ -851,6 +851,7 @@ placeholder  {
 .academy-logo  {
 	text-decoration: none;
 	color: #000000;	
+	width: 113px;
 }
 
 
@@ -1238,7 +1239,6 @@ legend  {
 	width: 50px;
 	margin: 0;
 	color: inherit;
-	font: inherit;
 	background: none;
 	border: none;
 }
