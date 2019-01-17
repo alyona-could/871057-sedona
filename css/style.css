@@ -129,7 +129,7 @@ a  {
 	display: block;
 	height: 510px;
 	border: none;
-	background: url(../img/background-photo.jpg) no-repeat top; 
+	background: url(../img/background-photo.jpg) no-repeat top #698FB4; 
 }
 
 
@@ -374,7 +374,7 @@ a  {
 
 .form-search  {
 	position: relative;
-	text-align: center; 	
+	text-align: center;	
 }
 
 
@@ -430,6 +430,8 @@ a  {
 	transform: translatex(-50%);
 	max-width: 458px;
 	background-color: #FFFFFF;
+	-webkit-box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+	box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15); 
 	padding: 55px;	
 	z-index: 1;
 }
@@ -761,27 +763,43 @@ a  {
 	display: block;
 	width: 46px;
 	height: 48px;
+	background-color: #80B3D2;
 }
 
 
 .twitter  {
 	background: url(../img/twitter.svg) no-repeat center;
-	background-color: #80B3D2;
-   
+	background-color: #80B3D2;   
+}
+
+
+.twitter:active  {
+	background: url(../img/twitter-active.svg) no-repeat center;
+	background-color: #5596BE;   
 }
 
 
 .facebook  {
 	background: url(../img/fb-icon.svg) no-repeat center;
 	background-color: #80B3D2;
-   
+}
+
+
+.facebook:active  {
+	background: url(../img/fb-icon-active.svg) no-repeat center;
+	background-color: #5596BE;
 }
 
 
 .youtube  {
 	background: url(../img/youtube.svg) no-repeat center;
-	background-color: #80B3D2;
-   
+	background-color: #80B3D2;  
+}
+
+
+.youtube:active  {
+	background: url(../img/youtube-active.svg) no-repeat center;
+	background-color: #5596BE;  
 }
 
 
@@ -792,9 +810,6 @@ a  {
 }
 
 
-.social-button:active  {
-	background-color: #5596BE;	
-}
 
 
 .visually-hidden  {
@@ -911,8 +926,8 @@ a  {
 }
 
 
-.academy-logo a:active  {
-	color: #cacaca;
+.hotel-name:active  {
+	color: #CECECE;
 }
 
 
@@ -1043,6 +1058,7 @@ a  {
 .one-star-icon  {
 	list-style: none;
 	display: inline-block;
+	vertical-align: baseline;
 	padding-left: 2px;
 	width: 17px;
 	height: 17px;
@@ -1070,7 +1086,7 @@ a  {
 	padding-bottom: 3px;
 	padding-left: 72px;
 	padding-right: 72px;
-	background: url(../img/filter-background.jpg) no-repeat top;
+	background: url(../img/filter-background.jpg) no-repeat top #698FB4;
 	color: #ffffff;
 	font-size: 14px;
 	line-height: 21px;
@@ -1146,10 +1162,15 @@ legend  {
 }
 
 
-.filter-input-checkbox[type="checkbox"]:hover+label::before,
-.filter-input-checkbox[type="checkbox"]:focus+label::before { 
+.filter-input-checkbox[type="checkbox"]:hover + label::before,
+.filter-input-checkbox[type="checkbox"]:focus + label::before { 
 	outline: thin solid; 
 	outline: 5px auto -webkit-focus-ring-color; 
+}
+
+
+.filter-input-checkbox[type="checkbox"]:disabled + label::before {
+	background: url(../img/checkbox-off-disabled.svg) no-repeat left;
 }
 
 
@@ -1256,6 +1277,8 @@ legend  {
 
 .range-toggle:hover  {
 	background: #1c4f80;
+	width: 6px;
+	height: 6px;
 }
 
 
@@ -1391,7 +1414,7 @@ legend  {
 
 .sort  {
 	text-decoration: none;
-   color: #dadada;
+	color: #dadada;
 	border-bottom: 1px dotted #81b3d2;
 }
 
@@ -1413,7 +1436,7 @@ legend  {
 .current:focus,
 .current:active  {
 	text-decoration: none;
-   color: #81b3d2;
+	color: #81b3d2;
 	border: none;
 }
  
@@ -1429,7 +1452,7 @@ legend  {
 	background-color: transparent;
 	cursor: pointer;
 	font-size: 14px;
-   line-height: 14px;
+	line-height: 14px;
 }
 
  
@@ -1441,12 +1464,17 @@ legend  {
 }
 
 
-.up-down svg:hover,
-.up-down svg:focus  {
+.up-down  + .current svg  {
 	fill: #80B3D2;
 }
 
 
-.up-down svg:active  {
+.up-down svg:hover,
+.up-down svg:focus  {
 	fill: #000000;
+}
+
+
+.up-down svg:active  {
+	fill: #80B3D2;
 }
