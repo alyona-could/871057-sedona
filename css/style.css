@@ -115,7 +115,7 @@ a  {
 	height: 71px;
 	text-decoration: none;
 	position: absolute;
-	top: 0px;
+	top: 0;
 	left: 50%;
 	-webkit-transform: translateX(-50%);
 	-ms-transform: translateX(-50%);
@@ -134,10 +134,10 @@ a  {
 
 
 .main-banner:after  {
-	content: "" ;
+	content: '' ;
 	position: absolute;
-	bottom: 0;
-	background: url(../img/polygon.png) 0 0 no-repeat;
+	bottom: -2px;
+	background: url(../img/polygon.svg) 0 0 no-repeat;
 	left: 0;
 	height: 59px;
 	width: 100%;
@@ -603,7 +603,7 @@ a  {
 	height: 38px;
 	background-color: #f2f2f2;
 	vertical-align: bottom;
-	margin-left: 0px;
+	margin-left: 0;
 }
 
 
@@ -620,8 +620,8 @@ a  {
 	height: 38px;
 	background-color: #f2f2f2;
 	vertical-align: bottom;
-	margin-right: 0px;
-	margin-left: 0px;
+	margin-right: 0;
+	margin-left: 0;
 }
 
 
@@ -652,10 +652,12 @@ a  {
 }
 
 
-::-webkit-input-placeholder {color:#000000;}
-::-moz-placeholder       {color:#000000;}/* Firefox 19+ */
-:-moz-placeholder        {color:#000000;}/* Firefox 18- */
-:-ms-input-placeholder    {color:#000000;}
+placeholder  {
+	::-webkit-input-placeholder {color:#000000;}
+	::-moz-placeholder       {color:#000000;}/* Firefox 19+ */
+	:-moz-placeholder        {color:#000000;}/* Firefox 18- */
+	:-ms-input-placeholder    {color:#000000;}
+}
 
 
 .index-button  {
@@ -1135,10 +1137,10 @@ legend  {
 
 	
 .filter-input-checkbox + label::before  {
-	content: "";
+	content: '';
 	position: absolute;
-	top: 0px;
-	left: 0px;
+	top: 0;
+	left: 0;
 	width: 24px;
 	height: 27px;
 	background: url(../img/checkbox-off.svg) no-repeat left;
@@ -1149,10 +1151,10 @@ legend  {
 
 
 .filter-input-checkbox:checked + label::before {
-	content: "";
+	content: '';
 	position: absolute;
-	top: 0px;
-	left: 0px;
+	top: 0;
+	left: 0;
 	width: 24px;
 	height: 27px;
 	background: url(../img/checkbox-on.svg) no-repeat left;
@@ -1162,14 +1164,14 @@ legend  {
 }
 
 
-.filter-input-checkbox[type="checkbox"]:hover + label::before,
-.filter-input-checkbox[type="checkbox"]:focus + label::before { 
+.filter-input-checkbox[type='checkbox']:hover + label::before,
+.filter-input-checkbox[type='checkbox']:focus + label::before { 
 	outline: thin solid; 
 	outline: 5px auto -webkit-focus-ring-color; 
 }
 
 
-.filter-input-checkbox[type="checkbox"]:disabled + label::before {
+.filter-input-checkbox[type='checkbox']:disabled + label::before {
 	background: url(../img/checkbox-off-disabled.svg) no-repeat left;
 }
 
@@ -1207,7 +1209,7 @@ legend  {
 	
 	
 .price-per-day::after {
-	content: "";
+	content: '';
 	position: absolute;
 	top: 50%;
 	left: 50%;
