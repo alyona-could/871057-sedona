@@ -61,7 +61,7 @@ a  {
 }
 
 
-.menu-item   {
+.menu-item  {
 	margin: 0;
 	padding: 0;
 	list-style-type: none;
@@ -100,7 +100,7 @@ a  {
 
 
 .menu-item  a:hover,
-.menu-item  a:focus   {
+.menu-item  a:focus  {
 	color: #81b3d2;
 }
 
@@ -110,7 +110,7 @@ a  {
 }
 
 
-.logo-link   {
+.logo-link  {
 	width: 140px;
 	height: 71px;
 	text-decoration: none;
@@ -124,7 +124,7 @@ a  {
 }
 
 
-.main-banner   {
+.main-banner  {
 	position: relative;
 	display: block;
 	height: 510px;
@@ -135,12 +135,12 @@ a  {
 
 .main-banner:after  {
 	content: "" ;
-    position: absolute;
-    bottom: 0;
-    background: url(../img/polygon.png) 0 0 no-repeat;
-    left: 0;
-    height: 59px;
-    width: 100%;
+	position: absolute;
+	bottom: 0;
+	background: url(../img/polygon.png) 0 0 no-repeat;
+	left: 0;
+	height: 59px;
+	width: 100%;
 }
 
 
@@ -171,7 +171,7 @@ a  {
 }
 
 
-.reasons-list   {
+.reasons-list  {
 	margin: 0;
 	padding: 0;
 	display: -webkit-box;
@@ -212,6 +212,7 @@ a  {
 	padding-left: 63px;
 	padding-right: 65px;
 }
+ 
  
 .reason h2  {
 	margin: 0;
@@ -285,7 +286,7 @@ a  {
 }
 
 
-.reason-text   {
+.reason-text  {
 	margin-right: 60px;
 	margin-left: 60px;
 	font-size: 14px;
@@ -293,13 +294,14 @@ a  {
 	padding-top: 4px;
 }
 
-.reason-text-grey   {
+
+.reason-text-grey  {
 	font-size: 14px;
 	line-height: 21px;
 }
 
 
-.extra-reasons   {
+.extra-reasons  {
 	margin: 0;
 	padding: 0;
 	display: -webkit-box;
@@ -325,7 +327,6 @@ a  {
 }
 
 
-
 .extra-reason-item  {
 	margin: 0;
 	padding: 0;
@@ -349,19 +350,18 @@ a  {
 }
 
 
-
 .map  {
 	position: relative;
 }
 
 
 .map iframe  {
-    background: #dfe7cd;
-    background-image: url(../img/map.png);
-    background-repeat: no-repeat;
-    width: 1200px;
-    height: 589px;
-    border: 0;
+   background: #dfe7cd;
+   background-image: url(../img/map.png);
+   background-repeat: no-repeat;
+   width: 1200px;
+   height: 589px;
+   border: 0;
 }
 
 
@@ -423,6 +423,7 @@ a  {
 	color: #918A84;
 }
 
+
 .register-form  {
 	position: absolute;
 	left: 50%;
@@ -440,6 +441,7 @@ a  {
 	animation-fill-mode: forwards;
 }
 
+
 @keyframes form-hidden  {
 	0%{
 		transform: translate(-50%, 0%);
@@ -450,6 +452,7 @@ a  {
 		z-index: -1
 	}
 }
+
 
 .register-form-shown  {
 	animation: form-shown;
@@ -472,7 +475,6 @@ a  {
 }
 
 
-
 .register-form-field  {
 	position: relative;
 	display: -webkit-box;
@@ -492,8 +494,8 @@ a  {
 	flex-wrap: nowrap;
 	margin: 0;
 	font-weight: bold;
-    font-size: 14px;
-    line-height: 24px;	
+	font-size: 14px;
+	line-height: 24px;	
 	padding-bottom: 30px;
 }
 
@@ -532,6 +534,7 @@ a  {
 	background-color: #FFFFFF;
 	border: 2px solid #E5E5E5;
 }
+
 	
 .calendar  {
 	position: absolute;
@@ -610,7 +613,7 @@ a  {
 .minus  {
 	margin: 0;
 	padding: 0;
-    border: none;
+	border: none;
 	width: 38px;
 	height: 38px;
 	background-color: #f2f2f2;
@@ -648,9 +651,9 @@ a  {
 
 
 ::-webkit-input-placeholder {color:#000000;}
-::-moz-placeholder          {color:#000000;}/* Firefox 19+ */
-:-moz-placeholder           {color:#000000;}/* Firefox 18- */
-:-ms-input-placeholder      {color:#000000;}
+::-moz-placeholder       {color:#000000;}/* Firefox 19+ */
+:-moz-placeholder        {color:#000000;}/* Firefox 18- */
+:-ms-input-placeholder    {color:#000000;}
 
 
 .index-button  {
@@ -710,6 +713,7 @@ a  {
 	padding-bottom: 36px;
 }
 
+
 .hashtag  {
 	min-width: 400px;
 	font-size: 21px;
@@ -763,21 +767,21 @@ a  {
 .twitter  {
 	background: url(../img/twitter.svg) no-repeat center;
 	background-color: #80B3D2;
-    
+   
 }
 
 
 .facebook  {
 	background: url(../img/fb-icon.svg) no-repeat center;
 	background-color: #80B3D2;
-    
+   
 }
 
 
 .youtube  {
 	background: url(../img/youtube.svg) no-repeat center;
 	background-color: #80B3D2;
-    
+   
 }
 
 
@@ -848,6 +852,7 @@ a  {
 
 /* Styles for inner.html*/
 
+
 .hotels-list  {
 	margin: 0;
 	padding: 0;
@@ -911,7 +916,6 @@ a  {
 }
 
 
-
 .hotel-info  {
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -947,7 +951,7 @@ a  {
 }
 
 
-.hotel-buttons   {
+.hotel-buttons  {
 	font-size: 14px;
 	font-weight: bold;
 }
@@ -963,7 +967,7 @@ a  {
 	padding-right: 16px;
 	padding-left: 16px;
 	text-align: center;
-    color: #FFFFFF;
+	color: #FFFFFF;
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 	min-width: 110px;
@@ -993,7 +997,7 @@ a  {
 	padding-right: 16px;
 	padding-left: 16px;
 	text-align: center;
-    color: #FFFFFF;
+	color: #FFFFFF;
 }
 
 
@@ -1025,7 +1029,6 @@ a  {
 	padding-bottom: 8px;
 	padding-right: 13px;
 	padding-left: 13px;
-	
 }
 
 
@@ -1049,6 +1052,7 @@ a  {
 
 /* Styles for filter*/
 
+
 .filter  {
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -1068,9 +1072,9 @@ a  {
 	padding-right: 72px;
 	background: url(../img/filter-background.jpg) no-repeat top;
 	color: #ffffff;
-    font-size: 14px;
-    line-height: 21px;
-	}
+	font-size: 14px;
+	line-height: 21px;
+}
 	
 	
 fieldset  {
@@ -1086,19 +1090,23 @@ legend  {
 	font-weight: bold;
 }
 
-.infrostructure  ul{
+
+.infrostructure  ul  {
 	margin-top: 23px;
 	padding: 0;
 }
+
 
 .type  {
 	margin-left: 119px;
 }
 
-.type ul{
+
+.type ul  {
 	margin-top: 23px;
 	padding: 0;
 }
+
 
 .filter-option  {
 	position: relative;
@@ -1123,6 +1131,7 @@ legend  {
 	cursor: pointer;
 }
 
+
 .filter-input-checkbox:checked + label::before {
 	content: "";
 	position: absolute;
@@ -1137,12 +1146,10 @@ legend  {
 }
 
 
-.filter-label:hover,
-.filter-label:focus  {
-	outline-style: solid;
-	cursor: pointer;
-	line-height: 24px;
-	margin-top: 8px;
+.filter-input-checkbox[type="checkbox"]:hover+label::before,
+.filter-input-checkbox[type="checkbox"]:focus+label::before { 
+	outline: thin solid; 
+	outline: 5px auto -webkit-focus-ring-color; 
 }
 
 
@@ -1156,7 +1163,7 @@ legend  {
 }
 
 
-.range {
+.range  {
 	width: 318px;
 }
 
@@ -1173,7 +1180,6 @@ legend  {
 	position: relative;
 	height: 34px;
 	margin-bottom: 20px;
-	
 	border: 2px solid #ffffff;
 	border-radius: 2px;	
 }
@@ -1205,7 +1211,7 @@ legend  {
 }
 
 
-.price-per-day input   {
+.price-per-day input  {
 	width: 50px;
 	margin: 0;
 	color: inherit;
@@ -1227,7 +1233,7 @@ legend  {
 }
 
 
-.range-controls .bar {
+.range-controls .bar  {
 	width: 80%;
 	height: 2px;
 	background: #ffffff;
@@ -1308,8 +1314,8 @@ legend  {
 
 .found  {
 	font-size: 21px;
-    font-weight: bold;
-    line-height: 26px;
+	font-weight: bold;
+	line-height: 26px;
 	padding-right: 48px;
 }
 
@@ -1385,7 +1391,7 @@ legend  {
 
 .sort  {
 	text-decoration: none;
-    color: #dadada;
+   color: #dadada;
 	border-bottom: 1px dotted #81b3d2;
 }
 
@@ -1401,29 +1407,37 @@ legend  {
 	border: none;
 }
 
+
 .current,
 .current:hover,
 .current:focus,
 .current:active  {
 	text-decoration: none;
-    color: #81b3d2;
+   color: #81b3d2;
 	border: none;
 }
  
+ 
 .up-down  {
+	position: relative;
 	margin: 0;
-	margin-left: 2px;
-	padding: 4px;
+	margin-left: 5px;
+	margin-top: 5px;
 	border: none;
 	width: 18px;
 	height: 18px;
 	background-color: transparent;
 	cursor: pointer;
+	font-size: 14px;
+   line-height: 14px;
 }
 
-  
+ 
 .up-down svg  {
 	fill: #cccccc;
+	position: absolute;
+	top: 4px;
+	left: 4px;
 }
 
 
