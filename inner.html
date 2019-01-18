@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <title>HTML Academy: гостиницы Седоны</title>
 		<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">
-		<link href="css/normalize.css" rel="stylesheet">
-		<link href="css/style.css" rel="stylesheet">
+		<link href="css/min.normalize.css" rel="stylesheet">
+		<link href="css/min.style.css" rel="stylesheet">
   </head>
 <body>
 	<div class="container">
@@ -45,8 +45,8 @@
 				<h2 class="visually-hidden">Фильтр товаров</h2>
 				<form class="filter" method="post" action="https://echo.htmlacademy.ru">
 					<section class="infrostructure">
-						<fieldset>
-							<legend>Инфраструктура:</legend>
+						<fieldset class="filter-column">
+							<legend class="filter-column-title">Инфраструктура:</legend>
 							<ul>
 								<li class="filter-option">
 									<input class="visually-hidden filter-input-checkbox" type="checkbox" name="pool" id="filter-pool" checked>
@@ -64,8 +64,8 @@
 						</fieldset>
 					</section>
 					<section class="type">
-						<fieldset>
-							<legend>Тип жилья:</legend>
+						<fieldset class="filter-column">
+							<legend class="filter-column-title">Тип жилья:</legend>
 							<ul>
 								<li class="filter-option">
 									<input class="visually-hidden filter-input-checkbox" type="checkbox" name="hotel" id="filter-hotel" checked>

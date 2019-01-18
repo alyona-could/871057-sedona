@@ -4,18 +4,8 @@ body  {
 	font-family: 'PT Sans', Arial, sans-serif;
 	background-color: #F2F2F2;
 	text-transform: uppercase;
-}
-
-
-p  {
-	margin: 0;
 	font-size: 14px;
 	line-height: 21px;
-}
-
-
-a  {
-	text-decoration: none;
 }
 
 
@@ -202,9 +192,9 @@ a  {
 	padding-bottom: 58px;
 	padding-left: 73px;
 	padding-right: 72px;
+	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 	max-width: 400px;
-	background: #eeeeee;
 }
 
 
@@ -238,18 +228,47 @@ a  {
 }
 
 
+.smart-reason-row  {
+	background-color: #81b3d2;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: stretch;
+	-ms-flex-pack: stretch;
+	justify-content: stretch;
+}
+
+
+.reason-row   {
+	background-color: #eeeeee;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: stretch;
+	-ms-flex-pack: stretch;
+	justify-content: stretch;
+}
+
+
 .text-reason-smart  {
 	color: #FFFFFF;
-	background-color: #81b3d2;
 	text-align: center;
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 	max-width: 400px;
 	padding-top: 48px;
+	padding-bottom: 10px;
 	padding-right: 60px;
 	padding-left: 60px;
 	min-height: 256px;
 	text-align: center;
+	font-size: 14px;
+	line-height: 21px;
+}
+
+
+.smart-text  {
+	margin: 0;
 	font-size: 14px;
 	line-height: 21px;
 }
@@ -296,6 +315,7 @@ a  {
 
 
 .reason-text-grey  {
+	margin: 0;
 	font-size: 14px;
 	line-height: 21px;
 }
@@ -331,6 +351,7 @@ a  {
 	margin: 0;
 	padding: 0;
 	padding-top: 145px;
+	margin-bottom: 10px;
 	min-width: 33%;
 }
 
@@ -379,6 +400,7 @@ a  {
 
 
 .form-text  {
+	margin: 0;
 	font-size: 14px;
 	line-height: 24px;
 }
@@ -427,7 +449,9 @@ a  {
 .register-form  {
 	position: absolute;
 	left: 50%;
-	transform: translatex(-50%);
+	-webkit-transform: translatex(-50%);
+	    -ms-transform: translatex(-50%);
+	        transform: translatex(-50%);
 	max-width: 458px;
 	background-color: #FFFFFF;
 	-webkit-box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
@@ -438,39 +462,79 @@ a  {
 
 
 .register-form-hidden  {
-	animation: form-hidden;
-	animation-duration: 0s;
-	animation-fill-mode: forwards;
+	-webkit-animation: form-hidden;
+	        animation: form-hidden;
+	-webkit-animation-duration: 0s;
+	        animation-duration: 0s;
+	-webkit-animation-fill-mode: forwards;
+	        animation-fill-mode: forwards;
+}
+
+
+@-webkit-keyframes form-hidden  {
+	0%{
+		-webkit-transform: translate(-50%, 0%);
+		        transform: translate(-50%, 0%);
+		
+	}
+	100%{
+		-webkit-transform: translate(-50%, -100%);
+		        transform: translate(-50%, -100%);
+		z-index: -1
+	}
 }
 
 
 @keyframes form-hidden  {
 	0%{
-		transform: translate(-50%, 0%);
+		-webkit-transform: translate(-50%, 0%);
+		        transform: translate(-50%, 0%);
 		
 	}
 	100%{
-		transform: translate(-50%, -100%);
+		-webkit-transform: translate(-50%, -100%);
+		        transform: translate(-50%, -100%);
 		z-index: -1
 	}
 }
 
 
 .register-form-shown  {
-	animation: form-shown;
-	animation-duration: 0.1s;
-	animation-fill-mode: forwards;
+	-webkit-animation: form-shown;
+	        animation: form-shown;
+	-webkit-animation-duration: 0.1s;
+	        animation-duration: 0.1s;
+	-webkit-animation-fill-mode: forwards;
+	        animation-fill-mode: forwards;
+}
+
+
+@-webkit-keyframes form-shown  {
+	0%{
+		-webkit-transform: translate(-50%, -100%);
+		        transform: translate(-50%, -100%);
+		opacity: 0;
+		z-index: -1
+	}
+	100%{
+		-webkit-transform: translate(-50%, 0%);
+		        transform: translate(-50%, 0%);
+		opacity: 1;
+		z-index: 1
+	}
 }
 
 
 @keyframes form-shown  {
 	0%{
-		transform: translate(-50%, -100%);
+		-webkit-transform: translate(-50%, -100%);
+		        transform: translate(-50%, -100%);
 		opacity: 0;
 		z-index: -1
 	}
 	100%{
-		transform: translate(-50%, 0%);
+		-webkit-transform: translate(-50%, 0%);
+		        transform: translate(-50%, 0%);
 		opacity: 1;
 		z-index: 1
 	}
@@ -505,6 +569,7 @@ a  {
 .register-form-field label  {
 	text-align: left;
 	width: 112px;
+	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 }
 
@@ -524,7 +589,7 @@ a  {
 	font-weight: bold;
 	text-transform: uppercase;
 	padding-left: 14px;
-	}
+}
 	
 	
 .date:hover  {
@@ -569,6 +634,7 @@ a  {
 
 
 .register-form-field > .kids  {
+	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 	padding-left: 52px;
 	width: 118px;
@@ -652,11 +718,25 @@ a  {
 }
 
 
-placeholder  {
-	::-webkit-input-placeholder {color:#000000;}
-	::-moz-placeholder       {color:#000000;}/* Firefox 19+ */
-	:-moz-placeholder        {color:#000000;}/* Firefox 18- */
-	:-ms-input-placeholder    {color:#000000;}
+.register-form-field  input::-webkit-input-placeholder  {
+	color: #000000;
+}
+
+
+.register-form-field  input::-moz-placeholder  {
+	color: #000000;
+	opacity: 1;
+}
+
+
+.register-form-field  input:-moz-placeholder  {
+	color: #000000;
+	opacity: 1;
+}
+
+
+.register-form-field  input::-ms-input-placeholder {
+	color: #000000;
 }
 
 
@@ -812,8 +892,6 @@ placeholder  {
 }
 
 
-
-
 .visually-hidden  {
 	position: absolute;
 	clip: rect(0 0 0 0);
@@ -892,8 +970,8 @@ placeholder  {
 	flex-wrap: nowrap;
 	list-style-type: none;
 	border-bottom: 	1px solid #E5E5E5;
-	padding-top: 28px;
-	padding-bottom: 27px;
+	padding-top: 29px;
+	padding-bottom: 24px;
 	padding-left: 72px;
 	padding-right: 72px;
 }
@@ -906,6 +984,9 @@ placeholder  {
 	padding-top: 2px;
 }
 
+.hotel-text{
+	max-width: 60%;
+}
 
 .hotel-item  h2  {
 	margin: 0;
@@ -913,7 +994,7 @@ placeholder  {
 	font-size: 21px;
 	font-weight: bold;
 	line-height: 18px;
-	margin-bottom: 14px;
+	margin-bottom: 10px;
 }
 
 
@@ -952,7 +1033,7 @@ placeholder  {
 	align-items: center;
 	margin: 0;
 	padding: 0;
-	margin-bottom: 22px;
+	margin-bottom: 19px;
 	font-size: 14px;
 }
 
@@ -964,6 +1045,7 @@ placeholder  {
 
 
 .hotel-price  {
+	min-width: 110px;
 	padding: 0;
 	padding-left: 6px;
 }
@@ -971,6 +1053,7 @@ placeholder  {
 
 .hotel-buttons  {
 	font-size: 14px;
+	line-height: 20px;
 	font-weight: bold;
 }
 
@@ -985,6 +1068,7 @@ placeholder  {
 	padding-right: 16px;
 	padding-left: 16px;
 	text-align: center;
+	text-decoration: none;
 	color: #FFFFFF;
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
@@ -1015,6 +1099,7 @@ placeholder  {
 	padding-right: 16px;
 	padding-left: 16px;
 	text-align: center;
+	text-decoration: none;
 	color: #FFFFFF;
 }
 
@@ -1096,14 +1181,14 @@ placeholder  {
 }
 	
 	
-fieldset  {
+.filter-column {
 	margin: 0;
 	padding: 0;
 	border: none;
 }
 
 
-legend  {
+.filter-column-title {
 	font-size: 16px;
 	line-height: 21px;
 	font-weight: bold;
