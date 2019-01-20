@@ -9,6 +9,16 @@ body  {
 }
 
 
+img { 
+	max-width: 100%
+}
+
+
+a  { 
+	text-decoration: none
+}
+
+
 .container  {
 	position: relative;
 	display: block;
@@ -737,6 +747,7 @@ body  {
 
 .register-form-field  input:-ms-input-placeholder {
 	color: #000000;
+	opacity: 1;
 }
 
 
@@ -984,7 +995,7 @@ body  {
 	padding-top: 2px;
 }
 
-.hotel-text{
+.hotel-text  {
 	max-width: 60%;
 }
 
@@ -1089,7 +1100,7 @@ body  {
 }
 
 
-.button-booking	{
+.button-booking  {
 	margin: 0;
 	padding: 0;
 	background-color: #766357;
